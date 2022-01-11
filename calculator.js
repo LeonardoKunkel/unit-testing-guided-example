@@ -1,13 +1,30 @@
+// FUNCIONES DECLARATIVAS
 function sum(a, b) {
-  return;
+  if(!a && !b) {
+    return 0;
+  } else if(b === undefined) {
+    b = 0;
+  }
+  const total = a + b
+  return total;
 }
 
 function subtract(a, b) {
-  return;
+  if(!a && !b) {
+    return 0;
+  } else if( b === undefined) {
+    b = 0;
+  }
+  const total = a - b;
+  return total;
 }
 
 function divide(a, b) {
-  return;
+  if(!b) {
+    return error('No se puede dividir entre cero');
+  }
+  const total = a / b;
+  return total;
 }
 
 function multiply(a, b) {
